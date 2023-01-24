@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initia-scale=1.0">
+            <title>Index</title>
+            <style>
+                *{
+                    box-sizing: border-box;
+                }
+                body{
+                    margin: 0%;
+                    font-family:'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+                }
+                .container{
+                    position: fixed;
+                    top:50%;
+                    left: 50%;
+                    transform: translate(-50%,-50% );
+                    width: 100%;
+                    height: 100%;
+                    box-shadow: 0 10px 20px rgba(274, 107, 28, 0.4);
+                   
+
+                }
+                #myvideo{
+                        width: 100%;
+                        height: auto;
+                        filter: blur(3px);
+                }
+                
+                .Overlay {
+                   position:absolute;
+                   top:0%;
+                   left: 0%;
+                   height: 100%;
+                   width: 100%;
+               background-color: rgba(9, 9, 9, 0.4);
+                    display:flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    
+                        }
+                .text{
+                    position: relative;
+                    width: 50%;
+                  border-radius: 30% 5%;
+                    border: 4px solid rgb(219, 216, 216);
+                    text-align: center;
+                    line-height: 240px;
+                    font-weight: 400;
+                    color: rgb(255, 254, 254);
+                    font-size: 2.6rem;
+                    font-family:'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+
+                }
+                .btn{
+                    padding: 8px;
+                    text-transform: uppercase;
+                    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+                    background-color: rgba(0, 0, 0, 0.25);
+                    color:rgb(255, 255, 255);
+                    font-size: 19px;
+                    text-decoration: none;
+                    outline: none;
+                    border: 2px solid;
+                    transition: .3s;
+                    cursor: pointer;
+                
+                }
+                .btn:hover{
+                    background: transparent;
+                    
+
+                }
+                
+                </style>
+        </head>
+        <body>
+            <div class="container">
+            <video autoplay muted loop id="myvideo">
+                <source src="our gym.mp4" type="video/mp4">
+                </video>
+             
+                    <Div Class="Overlay">
+                        <div class="text">
+                        Welcome To Our Club
+                        <a href="Fitness Club.html"><button class="btn">Click Here</button></a>
+                      </Div>
+                    
+                </body>
+                </html>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </body>
+        </html>

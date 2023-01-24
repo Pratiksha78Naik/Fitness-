@@ -1,0 +1,208 @@
+<html>
+    <head>
+        <title>contact page</title>
+        <style>
+            *{
+                margin:0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family:'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+            }
+            .contact{
+                position: relative;
+                min-height: 100vh;
+                padding: 50px 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background: url(Image/con4.webp);
+                background-size: cover;
+                
+            }
+            .contact .content {
+                max-width: 800px;
+                text-align: center;
+             
+            }
+            .contact .content h2 {
+                font-size: 36px;
+                font-weight: 1000;
+                color: #fff;
+            }
+            .contact .content p {
+                
+                font-weight: 600;
+                color: #fff;
+            }
+
+
+            .container {
+                width:90%;
+                display: flex;
+                justify-content: space-evenly;
+                margin: auto;
+                margin-top: 50px;
+                background:rgba(58, 58, 58, 0.9);
+            }
+            .container .contactInfo {
+                width: 30%;
+                
+            }
+            .container .contactInfo .box {
+                position: relative;
+                /* padding: 20px 0; */
+                
+            }
+            .icon img {
+                width: 50px;
+                height: 50px;
+                margin-left: 15px;
+                margin-bottom: 5px;
+                /* background: transparent; */
+                border-radius: 50%;
+                font-size: 22px;
+            }
+            .container .contactInfo .box .text {
+                
+                margin-left: 15px;
+                font-size: 16px;
+                color:#fff;
+                margin-bottom: 10px;
+                font-weight: 300;
+            }
+            .container .contactInfo .box .text h3 {
+                font-weight: 500;
+                color: #f6f6f6;
+            }
+
+
+            .contactForm {
+                width: 40%;
+                padding: 40px;
+                background: rgba(162, 128, 128, 0.4);
+                background: transparent;
+                }
+            .contactForm h2{
+                font-size: 30px;
+                color: #ffffff;
+                font-weight: 500;
+            }
+            .contactForm .inputBox {
+                position: relative;
+                width: 100%;
+                margin-top: 10px;
+            }
+            .contactForm .inputBox input {
+                width:100%;
+                padding: 5px 0px;
+                font-size: 16px;
+                margin: 10px 0;
+                border: none;
+                border-bottom: 2px solid white;
+                outline: none;
+                resize: none;
+                background: transparent;
+            }
+            .contactForm .inputBox span {
+                position: absolute;
+                left: 0;
+                padding: 5px 0;
+                font-size: 16px;
+                margin: 10px 0;
+                pointer-events: none;
+                transition: 0.5s;
+                color: #ffffff;
+                background: transparent;
+            }
+            .contactForm .inputBox input:focus ~ span, 
+            .contactForm .inputbox input:valid ~ span,
+            .contactForm .inputBox textarea:focus ~ span, 
+            .contactForm .inputbox textarea:valid ~ span
+            {
+                color: #e91e63;
+                font-size: 12px;
+                transform: translateY(-20px);
+            }
+            .contactForm .inputBox input[type="submit"]
+            {
+                width: 100px;
+                background-image: linear-gradient(315deg, #534674 0%, #307e7c 74%);
+                color: rgb(255, 255, 255);
+                border: none;
+                cursor: pointer;
+                padding: 5px;
+                font-size: 25px;
+
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <section class="contact">
+            <div class="content">
+                <h2>Contact us</h2>
+                <p>Exercise not only changes your body, it changes your mind, your attitude and your mood.</p>
+                </div>
+
+                <div class="container">
+                    <div class="contactInfo">
+                        
+                        <div class="box">
+                        <div class="icon"><a href="https://www.google.com/maps"><img src="https://e7.pngegg.com/pngimages/230/805/png-clipart-blue-google-map-arrow-icon-computer-icons-location-icon-miscellaneous-blue.png" alt=""></a></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>4671 sugar Camp Road,<br> Qwatonna,Minnesota,<br>550690</p>
+                            </div>
+                        </div>
+
+
+                        <div class="box">
+                            <div class="icon"><a href=""><img src="https://static.vecteezy.com/system/resources/previews/005/043/114/original/blue-circle-phone-icon-free-vector.jpg" alt=""></a></div>
+                            <div class="text">
+                                <h3>phone</h3>
+                                <p>584-457-5454</p>
+                            </div>
+                        </div>
+
+
+                    <div class="box">
+                        <div class="icon"><a href="https://www.google.com/gmail"><img src="https://as2.ftcdn.net/v2/jpg/01/41/69/85/1000_F_141698567_kDI207ptMkRqRbsF7dWjHelM954Ub0QC.jpg" alt=""></a></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>fitnessclub@gmail.com</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                    <div class="contactForm">
+                        <form>
+                            <h2>
+                                Send Message
+                            </h2>
+                            <div class="inputBox">
+                                <input type="text" name="" required="required">
+                                <span>Full Name</span>
+                            </div>
+                            <div class="inputBox">
+                                <input type="text" name="" required="required">
+                                <span>Email</span>
+                            </div>
+                            <div class="inputBox">
+                                <textarea></textarea>
+                                <span>Type your Message...</span>
+                            </div>
+                            <div class="inputBox">
+                               <input type="submit" name="" value="Send">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </body>
+</html>

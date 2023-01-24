@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initia-scale=1.0">
+            <title>About Us</title>
+            <style>
+                *{
+                    margin:0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family:'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+                }
+                body{
+                    margin: 1px;
+                    padding: 1px;
+                    background-color: rgb(0, 0, 0);
+                    
+                }
+                nav{
+                            
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            background-color: rgba(187, 177, 161, 0.30);
+                        }
+
+                        ul{
+                            display: flex;
+                            align-items: center;
+                        
+                        
+                        }
+                        ul a{
+                            text-decoration: none;
+                            color:white;
+                            margin: 10px;
+                            text-transform: uppercase;
+                            font-family:'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+                            font-weight: 700;
+                            font-size: 15px;                            
+
+                        }
+                        ul li{
+                            list-style: none;
+                        }
+                        ul a:hover{
+                            color:rgb(192, 93, 86)
+                        }
+                        .logo{
+                            color: rgb(254, 252, 252);
+                        }
+
+                .vl{
+                    border-right: 5px solid  rgb(100, 20, 20);
+                    height: 730px;
+                }
+                h1{
+                    color: rgb(142, 28, 28);
+                    font-weight: 700;
+                    text-align: center;
+                }
+                .li-1, p{
+                    color: rgb(255, 255, 255);
+
+                }
+            
+                ol li{
+                    list-style-type: none;
+                }
+                .main{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                }
+
+                .sec1{
+                        width: 100%;
+                        height: auto;
+                        border-radius:10% 5%;
+                     
+                }
+                .sec2{
+                        width: 100%;
+                        margin: auto;
+                        padding: 1px;
+                        
+                        
+                }
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+                
+                .main2{
+                    width: 75%;
+                    margin:auto;
+                    display: flex;
+                    background-color: aliceblue;
+                    border: 1px solid red;
+                    border-radius:10% 10%;
+                    margin-bottom: 180px;
+                    margin-top: 5%;
+                 
+                }    
+                .box1{
+                    width: 25%;
+                    padding: 5px;
+                    height: auto;
+                    border-radius:10% 10%;
+                    border: 3px solid rgb(142, 28, 28);
+                    margin-top: 70px;
+                    margin-right: 50px;
+                    margin-left: 70px;
+                    margin-bottom: 50px;
+                  
+
+                    
+                }
+                button{
+                        background: #8e1c1c;;
+                        padding: 6px;
+                        text-transform: uppercase;
+                        color:white;
+                        font-size: 16px;
+                        text-decoration: none;
+                        outline: none;
+                        border: 2px solid;
+                        transition: .3s;
+                        cursor: pointer;
+                        margin-left: 30%;
+                       
+                      }
+                
+                h3{
+                    text-align: center;
+                      color: rgb(142, 28, 28);
+                    
+                }
+                .change{
+                    color: black;
+                    text-align:justify;
+                  
+                }
+               
+                 .main3{
+                    width: 100%;
+                    display: flex;
+                
+                }
+                .box2{
+                    width: 25%;
+                    height: auto;
+                    border-radius:2% 5%;
+                    border: 3px solid rgb(142, 28, 28);
+                    margin-right: 50px;
+                    margin-left: 70px;
+                    
+                    
+                }
+                .hover-img {
+                    background-color: #000;
+                    color: #fff;
+                    display: inline-block;
+                    margin: 8px;
+                    max-width: 320px;
+                    min-width: 240px;
+                    overflow: hidden;
+                    position: relative;
+                    text-align: center;
+                    width: 100%;
+                    }
+
+                    .hover-img * {
+                    box-sizing: border-box;
+                    transition: all 0.45s ease;
+                    }
+
+                    .hover-img::before,
+                    .hover-img::after {
+                    background-color: rgba(0, 0, 0, 0.5);
+                    border-top: 32px solid rgba(0, 0, 0, 0.5);
+                    border-bottom: 32px solid rgba(0, 0, 0, 0.5);
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    content: '';
+                    transition: all 0.3s ease;
+                    z-index: 1;
+                    opacity: 0;
+                    transform: scaleY(2);
+                    }
+
+                    .hover-img img {
+                    vertical-align: top;
+                    max-width: 100%;
+                    backface-visibility: hidden;
+                    }
+
+                    .hover-img figcaption {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    align-items: center;
+                    z-index: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    line-height: 1.1em;
+                    opacity: 0;
+                    z-index: 2;
+                    transition-delay: 0.1s;
+                    font-size: 24px;
+                    font-family: sans-serif;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    }
+
+                    .hover-img:hover::before,
+                    .hover-img:hover::after {
+                    transform: scale(1);
+                    opacity: 1;
+                    }
+
+                    .hover-img:hover > img {
+                    opacity: 0.7;
+                    }
+
+                    .hover-img:hover figcaption {
+                    opacity: 1;
+                    }
+                    .main4{
+                    width: 50%;
+                    margin:auto;
+                    background-color: aliceblue;
+                    border: 1px solid red;
+                    border-radius:10% 10%;
+                    margin-top: 5%;
+                    text-align: center;
+                 
+                }  
+               
+                .change2{
+            
+                    color: black;
+                 
+                  
+                }
+                .btn2{
+                        background: #8e1c1c;;
+                        padding: 6px;
+                        text-transform: uppercase;
+                        color:white;
+                        font-size: 16px;
+                        text-decoration: none;
+                        outline: none;
+                        border: 2px solid;
+                        transition: .3s;
+                        cursor: pointer;
+                      }
+                      .foot-1 {
+                background-color: rgb(61, 60, 60) ;
+                color: aliceblue;
+            }
+            .foot-2{
+                display: flex; 
+                justify-content: space-between;
+                height: 30%;
+                background-color: rgb(61, 60, 60);
+                color: aliceblue;
+                padding-left: 50px;
+                padding-right: 50px;
+                margin-top: 30px;
+                }
+            .icon img {
+                width: 30px;
+                height: 30px;
+                margin-left: 5px;
+                margin-bottom: 2px;
+               
+                border-radius: 30%;
+                font-size: 18px;
+                background-color: black;
+            }
+            .foot-3 {
+                padding: 4%;
+            }
+            .foot-4 {
+                padding-left: 20%;
+            }
+            
+            .footer {
+                
+                width: 92%;
+                margin: auto;
+                position: relative;
+                margin-top: 3px;
+                
+            }
+            .foot{
+                font-family:Arial, Helvetica, sans-serif;
+                color: rgb(252, 251, 251);
+            }
+            .footer1{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 2px;
+                font-size: 12px;
+            }
+            .foot-h3{
+                color: aliceblue;
+            }
+                    
+            
+
+                    
+                
+                
+                </style>
+                </head>
+                <body>
+                    <nav>
+                        <h2 class="logo">FITNESS CLUB</h2>
+                        <ul>
+                            <a href="Fitness Club.html"><li>Home</li></a>
+                            <a href="Aboutus.html"><li>About Us</li></a>
+                            <a href="blog.html"><li>Blog</li></a>
+                            <a href="Event.html"><li>Event</li></a>
+                            <a href="Health.html"><li>Health</li></a>
+                            <a href="contact page.html"><li>Contact</li></a>
+                            </ul>
+                    </nav>
+                    <div class="main">
+                    <div class="sec1">
+                    <h1>OUR STORY</h1>
+                    <p>In 1993, the first Fitness First club opened in Bournemouth in the South Of England. Over the next decade and a half, Fitness first was present in over 16 countries, including India making it a leader in the global fitness industry. In 2018, Fitness First India was acquired by cure.fit, India's largest chain of 
+                        fitness centres that offers energetic group workouts and multiple workout formats to choose fromThe health club you are running today with rows of treadmills, weight machines, pumping music, and cutting-edge programming has taken centuries to come into being.  While not a straight line, there is a long history of public gyms, going back thousands of years to the first gymnasiums of 
+                        ancient Greece. Many things that constitute a healthy lifestyle were apparent even in ancient times it has taken many years and advancements in science to the change the public perception in many cases. And there is still work to be done. We don't know exactly what the future holds, but it's good to have an understanding of the journey to this point.     
+                        A Timeline of the Fitness Industry Sure, running to catch your food or avoid being it—was the way humans got and stayed in shape from the beginning of time. However, over time, people looked for ways to improve their health and performance in less life-threatening ways.
+                         While today's health clubs are full of yoga pants and technology, you were more apt to find naked men preparing for competition and battle in the early days of public gyms. Greece is the root of what we now know as the modern health club or gym.  The word 'gymnasium' originated from the Greek word “gymnos,” which translates to naked. Gyms at that time were usually 
+                         a place for the education of young men (it will be a while until we get to women in the gym), which included physical education along with educational pursuits along with bathing. The ancient Greek's designed these public gymnasiums for athletes to train for open games such as the Olympics. Fitness and care of body was part of the overall philosophy of the ancient Greeks along with education.
+                          In fact, highlighting the public gym roots of Athens, were the Academy with Plato, and Aristotle's school the Lyceum.</p>
+                    
+                          <h1>Why Choose Us?</h1>
+                          <ol>
+                          <li class="li-1">Achieving fitness goals is not easy. Knowing how to exercise, finding time to exercise, and keeping motivated are common challenges. Getting yourself to the gym may feel much more overwhelming than actually working towards your goal. To lose weight or increase fitness levels, it’s time to try something different. Fitnessclub can help you achieve the results you want!</li>
+                          <li class="li-1">Our personal trainers help you stay motivated as we work to establish a consistent workout schedule. We design a fitness program that's structured to hold you accountable and create a lifestyle that encourages proper health and a positive well-being.
+                              <li class="li-1"> Nulla corporis ab sunt odit corrupti, a ut rerum dignissimos in labore,</li>
+                              
+                              </ol>
+                          </div>
+                          <div class="vl"></div>
+                    <div class="sec2">
+                        <img src="Image/834264.webp">
+                    
+                    </div>
+                    </div>
+
+                                                             <!--Part2-->
+
+
+                         <h1>Our Special Packges</h1>
+                        <div class="main2">
+                        <div class="box1">
+                                    <h3>Silver</h3>
+                                    <p class="change">✔Unlimited Club access 24 hours</p>
+                                    <p class="change">✔Group Attendance</p>
+                                    <p class="change">✔Gym Visit</p>
+                                    <p class="change">✔visit to the bath comples</p>
+                                    <p class="change">✔Gym, fight club</p>
+                                   <a href="joinus.html"> <button type="submit">Choose</button></a>
+                                    </div>
+                        <div class="box1">
+                                    <h3>Gold</h3>
+                                    <p class="change">✔Unlimited Club access 24 hours</p>
+                                    <p class="change">✔Group Attendance</p>
+                                    <p class="change">✖Gym Visit</p>
+                                    <p class="change">✖visit to the bath comples</p>
+                                    <p class="change">✔Gym, fight club</p>
+                                    <a href="joinus.html"> <button type="submit">Choose</button></a>
+                                    </div>
+                        <div class="box1">
+                                    <h3>Premimum</h3>
+                                    <p class="change">✔Unlimited Club access 24 hours</p>
+                                    <p class="change">✔Group Attendance</p>
+                                    <p class="change">✖Gym Visit</p>
+                                    <p class="change">✖visit to the bath comples</p>
+                                    <p class="change">✖Gym, fight club</p>
+                                    <a href="joinus.html"> <button type="submit">Choose</button></a>
+                                    </div>
+                        </div>
+
+
+
+                                                     <!----Part 3---->
+
+                            <h1>Our Professional Traineers</h1>
+
+                            <div class="main3">
+                                <div class="box2">
+                                <figure class="hover-img">
+                                <img src="Image/gym trainer 1.jfif">
+                                <figcaption>
+                                    <h5>Yoga Trainer</h5>
+                                </figcaption>
+                                </figure>
+                                </div>
+
+                                <div class="box2">
+                                     <figure class="hover-img">
+                                         <img src="Image/muscular-male-gym-trainer-portrait.webp">
+                                     <figcaption>
+                                         <h5>Gym Instructor</h5>
+                                     </figcaption>
+                                </figure>
+                                   
+                                </div>
+                                <div class="box2">
+                                    <figure class="hover-img">
+                                        <img src="Image/gym-instructor.jpg">
+                                    <figcaption>
+                                        <h5>Group Exercise Instructor</h5>
+                                    </figcaption>
+                               </figure>
+
+                                </div>
+                                <div class="box2">
+                                    <figure class="hover-img">
+                                        <img src="Image/trainer.jfif">
+                                    <figcaption>
+                                        <h5>Personal Trainer</h5>
+                                    </figcaption>
+                               </figure>
+                                </div>
+                                </div>
+                                                 <!-----Part 4----->
+
+                           
+                            <div class="main4">
+                                <h1>How Can We Help?</h1>
+                            <p class="change2">We want to help our members go further, so if you have any suggestions about our clubs, classes, personal training sessions or anything else, please come in and talk to one of our team member or if you prefer,</p>
+                            </div>
+
+
+
+                                       <!-----Footer Part------>
+                 <div class="foot-2">
+                    <div class="foot-1">
+                        <img style="width: 150px; height: 60px;" src="https://www.clubfitness.us/wp-content/uploads/2020/12/club-fitness-logo-gradient.png" alt="">
+                        <p class="foot">Once you learn to quit, it becomes a habit</p>   
+                    </div>
+                <div class="foot-3">
+                    <form action="" method="get">
+                    <input style="height: 35px; background: transparent; border: 1px solid white;" type="text" placeholder="YOUR E-MAIL">
+                    <button style="height: 35px; background-color: rgb(165, 84, 84); border: none;" type="SUBMIT">SUBMIT</button>
+                 </div>
+                 <div class="foot-4">
+                    <h3 class="foot-h3">  FOLLOW US</h3>
+                 <div class="foot-5">
+                    <div class="icon">
+                        <a href="https://www.instagram.com/accounts/login/"><img style="background: transparent;" src="Image/insta logo.png" alt=""></a>
+                        <a href="https://www.facebook.com/login/"><img style="background:rgb(32, 32, 32);" src="Image/fb logo.png" alt=""></a>
+                        <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><img style="background: transparent;" src= "Image/logo.jpg" alt=""></a>
+                    </div>
+                 </div>
+               </div>
+            <div class="contact">
+                <h3 class="foot-h3">CALL US</h3>
+                <p class="foot">02 8541 9786</p>
+             </div>
+            
+                </div>
+                <div class="footer">
+                    <hr>
+                    <div class="footer1">
+                    <p class="foot">@Copy right @IDEA Health and fitness Association Rights Resserved </p><p class="foot"> PRIVACY POLICY  TERMMS AND CONDITIONS</P>
+                   </div>
+                   </div>
+
+                    </body>
+                    </html>

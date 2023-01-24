@@ -1,0 +1,150 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+}
+body {
+    background-color: black;
+    padding: 1px;
+    margin: 1px;  
+}
+.logo{
+    
+    color: azure;
+}
+.btn{
+    padding: 6px;
+    text-transform: uppercase;
+    font-family:'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+    background-color: rgb(158, 15, 41);
+    color:white;
+    font-size: 16px;
+    text-decoration: none;
+    outline: none;
+    border: 2px solid;
+    transition: .3s;
+    cursor: pointer;
+   
+}
+.btn:hover{
+    background: transparent;
+    
+
+}
+nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(187, 177, 161, 0.30);
+}
+
+ul{
+    display: flex;
+    align-items: center;
+  
+  
+}
+ul a{
+    text-decoration: none;
+    color:white;
+    margin: 10px;
+    text-transform: uppercase;
+    font-family:'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    
+
+}
+ul li{
+    list-style: none;
+}
+ul a:hover{
+    color:rgb(192, 93, 86)
+}
+.wallpaper{
+            background: rgb(10, 8, 8,);
+            background-image: url(Image/wallpaper.jpeg);
+            background-attachment: fixed;
+            background-position:center;
+            background-size: cover;
+            height: 85vh;
+         
+}
+.heading{
+    position: absolute;
+    color: rgba(255, 254, 254, 0.911);
+    top:30%;
+    left:8%;
+   
+}
+.heading h2{
+    display: block;
+    width: 60%;
+  
+}
+p{
+    color: rgb(5, 5, 5);
+    font-weight: 600;
+    text-align: left;
+    padding: 2px;
+    margin: auto;
+    text-transform:inherit;
+   
+}
+.heading h2{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+     font-size: 56px;
+     text-shadow: 2px 2px  #a5280c;
+}
+.heading .btn{
+    margin-top: 2rem;
+}
+.container{
+    display: flex;
+    justify-content: center;  
+ 
+
+}
+
+
+.box1{
+    width: 34%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.36);
+   text-align: center;
+   
+}
+
+.box2{
+    width: 34%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(234, 112, 112);
+
+
+}
+.box3{
+    width: 34%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.36);
+    text-align: center;
+  
+
+
+}
+.sec1{
+        color: rgb(255, 255, 255);
+        margin-top: 40px;
+}
+
+
